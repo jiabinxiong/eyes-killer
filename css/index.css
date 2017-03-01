@@ -1,0 +1,585 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+
+input,textarea{outline:none;}
+
+ul li,
+ol li {
+	list-style: none;
+}
+
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#173067+0,111e2f+100 */
+	background: #173067; /* Old browsers */
+	background: -moz-linear-gradient(top,  #173067 0%, #111e2f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #173067 0%,#111e2f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #173067 0%,#111e2f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#173067', endColorstr='#111e2f',GradientType=0 ); /* IE6-9 */	
+}
+
+em {
+	font-style: normal;
+}
+/*---------------------------------------- ----------------------------------------
+	开始页面
+---------------------------------------- ----------------------------------------*/
+.start-cont {
+	position: relative;
+	margin: 60px auto 0;
+	max-width: 350px;
+	height: 430px;
+	background-image: url(../images/start-block.png);
+	background-size: 100% 430px;
+}
+
+.start-btn {
+	position: absolute;	
+	bottom: 64px;
+	left: 100px;
+	width: 150px;
+}
+
+.start-btn a img {
+	width: 100%;
+}
+
+.game-rules-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.game-rules-btn img {
+	width: 60px;	
+}
+
+
+.game-rule-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fdf8d0;
+    font-size: 16px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#173067+0,111e2f+100 */
+	background: #173067; /* Old browsers */
+	background: -moz-linear-gradient(top,  #173067 0%, #111e2f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #173067 0%,#111e2f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #173067 0%,#111e2f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#173067', endColorstr='#111e2f',GradientType=0 ); /* IE6-9 */	
+}
+
+.game-rule-block h1 {
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.game-rule-block .activeity-text,
+.game-rule-block .activeity-time {
+    padding: 10px 20px;
+}
+
+.game-rule-block .link-close-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 60px;
+}
+
+
+/*---------------------------------------- ----------------------------------------
+	标题
+---------------------------------------- ----------------------------------------*/
+.title-area {
+	margin: 20px 0;
+	text-align: center;
+	color: #fdf8d0;
+}
+
+.title-area h1 {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/*---------------------------------------- ----------------------------------------
+	内容
+---------------------------------------- ----------------------------------------*/
+.cont-area {
+	margin: 0 auto;
+	max-width: 350px;
+	height: 511px;
+	background-image: url(../images/back.png);
+	background-size: 100% 511px;
+}
+
+.title-number {
+	padding: 16px 0 7px 0;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	color: #fdf8d0;
+}
+
+
+
+.progress-bar {
+}
+
+.countdown-timer {
+	width: 100px;
+	margin: 0 auto;
+	height: 22px;
+	padding: 0 14px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	background-color: #2596e3;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+		border-radius: 10px;
+}
+
+.progress-bar-block,
+.progress-bar-complete {
+	width: 256px;
+	height: 23px;
+	background-size: 256px 23px;
+}
+
+.progress-bar-block {
+	margin: 0 auto;
+	background-image: url(../images/progress-back.png);
+}
+
+.progress-bar-complete {
+	background-image: url(../images/progress.png);	
+}
+
+
+
+.game-stage {
+	width: 268px;
+	height: 268px;
+	margin: 50px auto 0;
+	padding: 1px 0 0 1px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.game-list {
+	width: 272px;
+	height: 272px;
+}
+
+.game-list li {
+	float: left;
+	width: 133px;
+	height: 133px;
+	padding: 0 1px 1px 0;
+}
+
+.block-color {
+	height: 100%;
+}
+
+
+
+
+/*---------------------------------------- ----------------------------------------
+	弹窗	
+---------------------------------------- ----------------------------------------*/
+.pop-window,
+.pop-window-back {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.pop-window {
+	position: fixed;
+	pointer-events: none;
+}
+
+.pop-window-back {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pop-window-cont {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	width: 276px;
+	height: 84px;
+	margin: -42px 0 0 -138px;
+	opacity: 0;
+	background-image: url(../images/pop-back.png);	
+	background-size: 276px 84px;
+}
+
+.pop-cont-text {
+	text-align: center;
+	font-size: 19px;
+	line-height: 84px;
+	color: #e8846c;
+}
+
+
+
+/*
+----------------------------------------------------------------------------------------------------
+    垂直居中
+----------------------------------------------------------------------------------------------------
+*/
+.vertical-center {
+    display: table-cell;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.vertical-center img {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+
+/*---------------------------------------- ----------------------------------------
+	结果页面	
+---------------------------------------- ----------------------------------------*/
+.level-area {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	width: 260px;
+	height: 225px;
+}
+
+
+.level-img {
+	height: 225px;
+	overflow: hidden;
+}
+
+.level-img-img {
+	position: relative;
+	top: -225px;
+	left: 0;
+	width: 260px;
+	height: 225px;
+}
+
+.level-img-img img {
+	width: 210px;
+	height: 150px;
+}
+
+
+.level-img-block {
+	width: 260px;
+	height: 225px;
+	background-image: url(../images/light-back.png);
+	background-size: 260px 225px;
+}
+
+
+.result-cont {
+	position: relative;
+	z-index: 2000;
+	max-width: 351px;
+	height: 313px;
+	margin: 0 auto;
+	background-image: url(../images/back-1.png);
+	background-size: 100% 313px;
+}
+
+
+.again-btn,
+.invitation-btn {
+	width: 102px;
+	height: 58px;
+
+	margin: -25px 0 0 0;
+}
+
+.again-btn img,
+.invitation-btn img {
+	width: 100%;
+}
+
+.again-btn {
+	float: left;
+	margin-left: 40px;
+}
+
+.invitation-btn {
+	float: right;	
+	margin-right: 40px;
+}
+
+
+
+.result-info-title {
+	padding: 34px 0 0 0;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+}
+
+
+.red-package-list {
+	padding: 52px 20px 0;
+}
+
+.red-package-list li {
+	float: left;
+	width: 33.3%;
+	height: 129px;
+	text-align: center;
+	background: url(../images/red-back.png) no-repeat bottom center;
+	background-size: 85px 20px;
+}
+
+.red-package-list li img {
+	width: 85px;
+	height: 129px;
+}
+
+.save-pop {
+	z-index: 10000;
+}
+
+.save-pop-back {
+	opacity: 1;
+	background-color: rgba(23, 47, 102, 0.9);
+}
+
+.save-pop-cont  {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 10001;
+}
+
+.save-pop-cont img {
+	width: 170px;
+}
+
+/*---------------------------------------- ----------------------------------------
+	中奖页
+---------------------------------------- ----------------------------------------*/
+.winning-cont {
+	margin: 70px auto 20px;
+	max-width: 350px;
+	height: 401px;
+	background-image: url(../images/winning-back.png);
+	background-size: 100% 401px;
+}
+
+.winning-title {
+	color: #fff;
+	text-align: center;
+}
+
+.winning-title h1 {
+	padding: 10px 0 12px 0;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+.winning-title-text {
+	height: 32px;
+	line-height: 30px;
+	font-size: 12px;
+	background: url(../images/winning-back-1.png) no-repeat center center;
+	background-size: 205px 32px;
+}
+
+
+
+
+.iphone-number {
+	margin: 190px 0 0 0;
+	text-align: center;
+}
+
+.iphone-input {
+	margin: 0 auto;
+	width: 140px;
+	height: 40px;
+}
+
+.iphone-input input {
+	width: 100%;
+	height: 40px;
+	line-height: 20px;
+	padding: 10px 0;
+	background-color: #faeed3;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 15px;
+	border: none;
+	border-bottom: 2px solid #fff;
+	box-shadow: 0 2px 0 #f8b795 inset;
+}
+
+.winning-btn {
+	margin: 10px auto 0;
+	width: 140px;
+	height: 40px;
+
+}
+
+.winning-btn img {
+	width: 100%;
+}
+
+
+.iphone-input input::-webkit-input-placeholder{
+	color: #e56a4d;
+
+}
+
+.iphone-input input::-moz-placeholder{
+	color: #e56a4d;
+}
+
+.iphone-input input:-moz-placeholder{
+	color: #e56a4d;
+}
+
+
+.winning-info-list {
+	width: 280px;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+
+.winning-info-list p {
+	line-height: 20px;
+	color: #fdf8d0;
+	font-size: 12px;
+}
+
+.winning-logo {
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.winning-logo img {
+	width: 135px;
+}
+
+
+.winning-pop {
+}
+
+.winning-pop-back {
+}
+
+.winning-pop-cont {
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	width: 350px;
+	height: 268px;
+	margin: -134px 0 0 -175px;	
+	opacity: 0;
+	background: url(../images/back-3.png);
+	background-size: 100% 268px;
+	text-align: center;
+	pointer-events: auto;
+}
+
+.winning-pop-close {
+	float: right;
+	margin: 7px 7px 0 0;	
+}
+
+.winning-pop-close img {
+	width: 50px;
+}
+
+.winning-title-pop {
+	margin: 100px 0 0 0;	
+}
+
+.winning-title-pop h2 {
+	color: #d3764d;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+
+.winning-pop-btn {
+	margin: 20px 0 0 0;
+}
+
+.winning-pop-btn p {
+	color: #d3764d;
+	font-size: 12px;
+}
+
+.winning-pop-btn-a img {
+	width: 138px;
+	margin: 10px 0 0 0;
+}
+
+
+.winning-pop-info img {
+	width: 160px;
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+	.start-btn {
+		bottom: 68px;
+		left: 83px;
+	}
+	.game-stage {
+		margin-top: 40px;
+	}
+
+
+	.winning-pop-cont {
+		width: 320px;
+		margin-left: -160px; 
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
